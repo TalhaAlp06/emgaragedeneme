@@ -1201,6 +1201,215 @@
             .info-table {
                 font-size: 0.75rem;
             }
+            /* ===== MOBIL YONETICI PANELI ===== */
+@media (max-width: 768px) {
+    /* Admin Panel Genel */
+    .admin-panel {
+        overflow-x: hidden;
+    }
+    
+    .admin-header {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .admin-header .admin-title {
+        font-size: 1rem;
+    }
+    
+    .admin-header .btn-secondary {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+    
+    /* Istatistik Kartlari */
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .stat-card {
+        padding: 15px 10px;
+    }
+    
+    .stat-number {
+        font-size: 1.6rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    /* Admin Icerik */
+    .admin-content {
+        padding: 0 15px 20px;
+    }
+    
+    /* Bilgi Paneli */
+    .info-toggle-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .info-panel {
+        padding: 12px;
+    }
+    
+    .info-panel h4 {
+        font-size: 0.9rem;
+    }
+    
+    .info-table th,
+    .info-table td {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+    
+    /* Filtre Bar */
+    .filter-bar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+    
+    .filter-bar select,
+    .filter-bar input,
+    .filter-bar .btn-danger {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    /* Tablo - KART GORUNUMU */
+    .admin-table-container {
+        background: transparent;
+        border: none;
+        overflow: visible;
+    }
+    
+    .admin-table thead {
+        display: none;
+    }
+    
+    .admin-table,
+    .admin-table tbody,
+    .admin-table tr,
+    .admin-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .admin-table tr {
+        background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+        border: 1px solid rgba(255, 215, 0, 0.15);
+        border-radius: 12px;
+        margin-bottom: 15px;
+        padding: 15px;
+        position: relative;
+    }
+    
+    .admin-table td {
+        border: none;
+        padding: 6px 0;
+        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .admin-table td:last-child {
+        border-bottom: none;
+        padding-top: 10px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    /* Etiketler icin data-label */
+    .admin-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #FFD700;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Ozel sutunlar */
+    .admin-table td:nth-child(1)::before { content: "Tarih:"; }
+    .admin-table td:nth-child(2)::before { content: "Ad Soyad:"; }
+    .admin-table td:nth-child(3)::before { content: "Telefon:"; }
+    .admin-table td:nth-child(4)::before { content: "Plaka:"; }
+    .admin-table td:nth-child(5)::before { content: "Marka/Model:"; }
+    .admin-table td:nth-child(6)::before { content: "Hizmet:"; }
+    .admin-table td:nth-child(7)::before { content: "Mesaj:"; }
+    .admin-table td:nth-child(8)::before { content: "Durum:"; }
+    .admin-table td:nth-child(9)::before { content: none; }
+    
+    /* Durum rozet */
+    .status-badge {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+    
+    /* Butonlar */
+    .admin-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+        width: 100%;
+    }
+    
+    .admin-actions button {
+        flex: 1;
+        min-width: 60px;
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+    
+    .admin-actions button i {
+        font-size: 0.9rem;
+    }
+    
+    /* Login Modal */
+    .login-box {
+        padding: 30px 20px;
+        margin: 15px;
+    }
+    
+    .login-box h2 {
+        font-size: 1.3rem;
+    }
+    
+    .login-box input {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .login-box .btn {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    /* Bos durum */
+    .empty-state {
+        padding: 40px 15px;
+    }
+    
+    .empty-state i {
+        font-size: 2.5rem;
+    }
+    
+    .empty-state p {
+        font-size: 0.9rem;
+    }
+}
         }
 
         /* Scroll Animation */
